@@ -111,7 +111,7 @@ namespace Service.CouponAPI.Controllers
         }
 
         [HttpPost]
-        public ResponseDto Post([FromBody]CouponDto couponDto)
+        public ResponseDto Post([FromBody] CouponDto couponDto)
         {
             try
             {
