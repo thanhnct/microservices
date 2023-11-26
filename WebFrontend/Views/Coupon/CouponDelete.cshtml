@@ -1,0 +1,30 @@
+﻿@using WebFrontend.Models;
+@model CouponDto;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="CouponDelete">
+    <input name="CouponId" value="@Html.Raw(Model.CouponId)" hidden>
+
+    <div class="form-group">
+        <label for="CouponCode">Coupon Code</label>
+        <input required type="text" class="form-control" id="CouponCode" name="CouponCode" value="@Html.Raw(Model.CouponCode)" readonly="readonly" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="DiscountAmount">Discount Amount</label>
+        <input required type="number" class="form-control" name="DiscountAmount" value="@Html.Raw(Model.DiscountAmount)" readonly="readonly" id="DiscountAmount" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="MinAmount">Min Amount</label>
+        <input required type="number" class="form-control" name="MinAmount" value="@Html.Raw(Model.MinAmount)" readonly="readonly" id="MinAmount" placeholder="">
+    </div>
+    <div class="form-row row mt-3">
+        <div class="form-group col-md-6">
+            <a type="button" asp-controller="Coupon" asp-action="Index" class="btn btn-outline-info form-control">Back to list</a>
+        </div>
+        <div class="form-group col-md-6">
+            <button type="submit" class="form-control btn btn-danger">Delete coupon</button>
+        </div>
+    </div>
+</form>

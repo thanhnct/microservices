@@ -1,0 +1,29 @@
+﻿@using WebFrontend.Models;
+@model List<CouponDto>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="btn-group mb-1" role="group" aria-label="Basic example">
+    <a asp-controller="Coupon" asp-action="CouponCreate" type="button" class="btn btn-success">Create coupon</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Coupon Code</th>
+            <th scope="col">Discount Amount</th>
+            <th scope="col">Minium Amount</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@Html.Raw(item.CouponCode)</th>
+                <th>@Html.Raw(item.DiscountAmount.ToString("c"))</th>
+                <th>@Html.Raw(item.MinAmount.ToString("c"))</th>
+                <th><a asp-action="CouponDelete" asp-route-couponId="@item.CouponId" class="btn btn-danger">Delete</a></th>
+            </tr>
+        }
+    </tbody>
+</table>

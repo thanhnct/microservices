@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace Service.CouponAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/v1/api/coupon")]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
