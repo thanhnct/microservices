@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{0DBF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.CouponAPI", "Services\Service.CouponAPI\Service.CouponAPI.csproj", "{882861B4-233A-4E18-ACCB-3E70E25174FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrontend", "WebFrontend\WebFrontend.csproj", "{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontend", "WebFrontend\WebFrontend.csproj", "{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.AuthAPI", "Service.AuthAPI\Service.AuthAPI.csproj", "{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{882861B4-233A-4E18-ACCB-3E70E25174FE} = {7FB7F7E3-22EB-44C9-A559-F5A46ACE33AB}
 		{4C4FF97D-BC9A-4225-93D3-5F1E3C5A2CC6} = {FD6066F3-3F0D-4BEB-9687-5ADA8A79AF7C}
+		{2E7D2B48-4E86-4B33-9BA5-CD39B91F3862} = {7FB7F7E3-22EB-44C9-A559-F5A46ACE33AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B85B9E83-2E16-4A8C-A650-9868AE4C102E}

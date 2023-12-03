@@ -1,0 +1,6 @@
+@Service.AuthAPI_HostAddress = http://localhost:7206
+
+GET {{Service.AuthAPI_HostAddress}}/v1/api/auth
+Accept: application/json
+
+###
